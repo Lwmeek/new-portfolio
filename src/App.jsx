@@ -7,7 +7,7 @@ function App() {
 
 	return (
 		<>
-			<div className="navbar bg-base-100">
+			<div className="navbar bg-base-00">
 				<div className="flex-none">
 					<button className="btn btn-square btn-ghost">
 						<svg
