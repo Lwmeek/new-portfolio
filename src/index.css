@@ -8,3 +8,11 @@
 .navbar {
     position: absolute;
 }
+.icon-group {
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+.icon {
+   
+}
