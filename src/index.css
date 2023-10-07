@@ -2,17 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	--clr-primary: #006778 /* Teal */;
+	--secondary: #d7a22a /* Gold */;
+	--base-100: #000000 /* Black */;
+	--neutral: #101820 /* Off Black */;
+	--accent: #9f792c /* Dark Gold */;
+	--base-content: #ffffff /* White */;
+}
+
 .banner {
-    width: 100%;
+	width: 100%;
 }
 .navbar {
-    position: absolute;
+	position: absolute;
 }
 .icon-group {
-    display: flex;
-    flex-direction: column;
-    float: right;
+	display: flex;
+	flex-direction: column;
+	float: right;
 }
-.icon {
-   
+
+/* Menu */
+.menu {
+	position: absolute;
+	top: 5rem;
+}
+.menu-item {
+	border-radius: 0.5rem;
+	transition: all 0.4s;
 }
