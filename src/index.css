@@ -27,6 +27,14 @@
 .menu {
 	position: absolute;
 	top: 5rem;
+	right: .2rem;
+	opacity: 0;
+	visibility: visible;
+	transition: all .3s ease-in-out;
+}
+.show {
+	opacity: 1;
+	visibility: visible;
 }
 .menu-item {
 	border-radius: 0.5rem;

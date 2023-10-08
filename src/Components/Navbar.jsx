@@ -1,4 +1,19 @@
 import { BiMenuAltRight } from "react-icons/bi";
+import { useState } from "react";
+
+const menuButton = document.querySelector(".menu-btn");
+const menuContent = document.querySelector(".menu");
+
+const [isVisible, setVisible] = useState(false);
+
+const handleShowingMenu = () => {
+	setVisible(!isVisible);
+	if (isVisible === true) {
+		menuContent.classList.add("show");
+	} else {
+		return;
+	}
+};
 
 export default function NavBar() {
 	return (
@@ -29,10 +44,10 @@ export default function NavBar() {
 				<a className=" btn btn-ghost text-lg font-bold">DaisyUI</a>
 			</div>
 			<div className="flex items-stretch justify-end flex-1 px-2">
-				<div className="btn btn-ghost">
+				<div className="btn btn-ghost menu-btn" onClick={handleShowingMenu}>
 					<BiMenuAltRight fontSize={33} />
 				</div>
-				<div className="menu rounded-lg bg-base-100 p-3">
+				<div className="menu rounded-lg bg-base-100 p-3 w-40">
 					<ul className="flex flex-col gap-2 z-[1]">
 						<li className="menu-item">
 							<a>Home</a>
