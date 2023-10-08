@@ -29,7 +29,7 @@
 	top: 5rem;
 	right: .2rem;
 	opacity: 0;
-	visibility: visible;
+	visibility: hidden;
 	transition: all .3s ease-in-out;
 }
 .show {

@@ -1,21 +1,25 @@
 import { BiMenuAltRight } from "react-icons/bi";
 import { useState } from "react";
 
-const menuButton = document.querySelector(".menu-btn");
-const menuContent = document.querySelector(".menu");
-
-const [isVisible, setVisible] = useState(false);
-
-const handleShowingMenu = () => {
-	setVisible(!isVisible);
-	if (isVisible === true) {
-		menuContent.classList.add("show");
-	} else {
-		return;
-	}
-};
-
 export default function NavBar() {
+	const [isVisible, setVisible] = useState(false);
+	const menuContent = document.querySelector(".menu");
+
+	const show = () => {
+		if (isVisible) {
+			menuContent.classList.add("show");
+		} else {
+			menuContent?.classList?.remove("show");
+		}
+	};
+	/* Logic for changing state */
+	const handleShowMenu = () => {
+		setVisible(!isVisible);
+		console.log(menuContent);
+		show();
+	};
+	/* Logic for Showing menu */
+
 	return (
 		<div className="navbar bg-transparent rounded-box">
 			<label className="swap swap-rotate">
@@ -44,7 +48,7 @@ export default function NavBar() {
 				<a className=" btn btn-ghost text-lg font-bold">DaisyUI</a>
 			</div>
 			<div className="flex items-stretch justify-end flex-1 px-2">
-				<div className="btn btn-ghost menu-btn" onClick={handleShowingMenu}>
+				<div className="btn btn-ghost menu-btn" onClick={handleShowMenu}>
 					<BiMenuAltRight fontSize={33} />
 				</div>
 				<div className="menu rounded-lg bg-base-100 p-3 w-40">
