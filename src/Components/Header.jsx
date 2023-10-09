@@ -3,6 +3,7 @@ import NavBar from "./Navbar";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Header = () => {
+	
 	return (
 		<>
 			<header>
