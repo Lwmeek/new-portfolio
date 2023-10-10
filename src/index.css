@@ -27,10 +27,10 @@
 .menu {
 	position: absolute;
 	top: 5rem;
-	right: .2rem;
+	right: 0.2rem;
 	visibility: hidden;
 	opacity: 0;
-	transition: all .3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 .show {
 	visibility: visible;

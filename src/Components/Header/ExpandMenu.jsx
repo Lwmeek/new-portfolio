@@ -5,7 +5,7 @@ import { useState } from "react";
 import Menu from "./Menu";
 
 const ExpandMenu = () => {
-    /* Expand menu logic */
+	/* Expand menu logic */
 	const [isExpanded, setExpanded] = useState(false);
 
 	const handleExpand = () => setExpanded(!isExpanded);

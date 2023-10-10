@@ -1,12 +1,11 @@
-import Header from "./Components/Header";
-
-
+import Header from "./Components/Header/Header";
+import Introduction from "./Components/Introduction/Introduction";
 
 function App() {
-	
 	return (
 		<>
 			<Header />
+			<Introduction />
 		</>
 	);
 }
