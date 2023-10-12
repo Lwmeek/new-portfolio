@@ -40,3 +40,8 @@
 	border-radius: 0.5rem;
 	transition: all 0.4s;
 }
+
+/* Introduction */
+span {
+	color: var(--secondary);
+}
