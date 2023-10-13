@@ -2,7 +2,7 @@ import React from "react";
 
 const Introduction = () => {
 	return (
-		<div className="hero bg-neutral">
+		<section className="hero mb-8">
 			<div className="hero-content flex-col md:flex-row">
 				<img
 					src="./src/images/zenitsu.png"
@@ -34,7 +34,7 @@ const Introduction = () => {
 					</button>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

@@ -10,6 +10,9 @@
 	--accent: #9f792c /* Dark Gold */;
 	--base-content: #ffffff /* White */;
 }
+body {
+	font-family: "AR One Sans", sans-serif;
+}
 
 .banner {
 	width: 100%;

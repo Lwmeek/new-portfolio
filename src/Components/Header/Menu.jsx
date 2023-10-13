@@ -1,7 +1,7 @@
 import React from "react";
 
 const Menu = (props) => {
-    /* Nav menu links */
+	/* Nav menu links */
 	const { className } = props;
 	return (
 		<div className={className}>
@@ -11,6 +11,9 @@ const Menu = (props) => {
 				</li>
 				<li className="menu-item">
 					<a>Projects</a>
+				</li>
+				<li className="menu-item">
+					<a>Contact Me</a>
 				</li>
 			</ul>
 		</div>
