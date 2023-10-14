@@ -30,7 +30,9 @@ const Introduction = () => {
 					</p>
 
 					<button className="btn btn-primary col-span-2 w-56 justify-self-center">
-						Resume
+						<a href="https://drive.google.com/file/d/1rlGYG_5dgM9XSwJKd29ysvfcKdgKPOc5/view?usp=drive_link">
+							Download Resume
+						</a>
 					</button>
 				</div>
 			</div>
