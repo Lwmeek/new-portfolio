@@ -13,7 +13,9 @@
 body {
 	font-family: "AR One Sans", sans-serif;
 }
+/* grid grid-cols-3 gap-2*/
 
+/* Header */
 .banner {
 	width: 100%;
 }
@@ -44,7 +46,12 @@ body {
 	transition: all 0.4s;
 }
 
-/* Introduction */
+/* Special Text color */
 span {
 	color: var(--secondary);
+}
+
+/* Project Card */
+.card-body {
+	padding: 1.6rem;
 }
