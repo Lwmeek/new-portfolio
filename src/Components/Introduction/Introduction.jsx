@@ -9,11 +9,27 @@ const Introduction = () => {
 					className="max-w-sm rounded-lg shadow-2xl"
 				/>
 				<section className="intro p-4">
-					I'm <span>Timic Ivey</span> a self-taught frontend developer certified
-					in HTML/CSS/JavaScript, React.js, and currently learning SASS and
-					Vue.js. I love gaming and watching sports in my free time while
-					balancing it with my passion for evolving the skills of my craft,
-					frontend development.
+					<h1 className="text-4xl mb-8">
+						What makes You <span>Different?</span>
+					</h1>
+					<p>
+						You might see a lot of candidates saying they are passionate about
+						frontend development but are they passionate about being the best
+						they can possibly be? I love criticism, I love knowing there is a
+						more faster, effective, efficient way to do a task on top of being
+						passionate about improving. I love knowing the “meta” or “trends” in
+						the industry that is the best way to do something like a video game.
+						I pay very close attention to details because as a frontend engineer
+						the smallest thing can make a huge difference. I don’t only want to
+						make a career change but I want to be apart of something, a team
+						that has each others back and helps each other grow to reach a
+						common goal as well as their personal goals. I'm {""}
+						<span>Timic Ivey</span> a self-taught frontend developer certified
+						in HTML/CSS/JavaScript, React.js, and currently learning Vue.js. I
+						love gaming and watching sports in my free time while balancing it
+						with my passion for evolving the skills of my craft, frontend
+						development.
+					</p>
 				</section>
 				<div className="grid grid-cols-2 items-center justify-items-center">
 					<p>

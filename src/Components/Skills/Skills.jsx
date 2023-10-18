@@ -4,8 +4,8 @@ const Skills = () => {
 	return (
 		<>
 			<section className="skills-section p-5 mb-16">
-				<h1 className="text-4xl mb-8">Skills I Possess</h1>
-				<div className="grid grid-cols-2 gap-3">
+				<h1 className="text-4xl mb-8 underline underline-offset-8">Skills I Possess</h1>
+				<div className="grid grid-cols-2 gap-2">
 					<p className="badge badge-accent text-secondary">
 						Frontend Development
 					</p>
