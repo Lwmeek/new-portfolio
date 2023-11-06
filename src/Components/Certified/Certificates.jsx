@@ -9,9 +9,9 @@ import {
 const Certificates = () => {
 	return (
 		<section className="certificates p-4">
-			<h1 className="text-4xl mb-6 underline underline-offset-4">
+			<h2 className="text-4xl mb-6 underline underline-offset-4">
 				Certifications
-			</h1>
+			</h2>
 			<div className="flex gap-2 items-center justify-between w-4/5">
 				<div className="flex gap-2">
 					<AiFillHtml5 className="text-2xl" />

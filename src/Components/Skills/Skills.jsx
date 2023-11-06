@@ -4,9 +4,9 @@ const Skills = () => {
 	return (
 		<>
 			<section className="skills-section p-5 mb-16">
-				<h1 className="text-4xl mb-8 underline underline-offset-4">
+				<h2 className="text-4xl mb-8 underline underline-offset-4">
 					Skills I Possess
-				</h1>
+				</h2>
 				<div className="grid grid-cols-2 gap-2">
 					<p className="badge badge-primary text-secondary">
 						Frontend Development

@@ -1,4 +1,5 @@
 import Certificates from "./Components/Certified/Certificates";
+import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Introduction from "./Components/Introduction/Introduction";
@@ -15,6 +16,7 @@ function App() {
 			<Projects />
 			<ProjectCard/>
 			<Certificates />
+			<Contact />
 			<Footer />
 		</>
 	);
