@@ -1,6 +1,5 @@
 import React from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { BiCopyright } from "react-icons/bi";
 
 const Footer = () => {
 	return (
@@ -13,10 +12,9 @@ const Footer = () => {
 					<BsLinkedin className="icon text-secondary" />
 				</a>
 			</div>
-			<div className="flex items-center gap-1 justify-center">
-				<BiCopyright className="text-secondary" />
+			<div className="text-center">
 				<p className="text-secondary">
-					2023 Created by and for Timic Ivey, All rights reserved
+					&copy; 2023 Created by and for Timic Ivey, All rights reserved
 				</p>
 			</div>
 		</section>
