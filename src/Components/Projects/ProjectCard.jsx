@@ -1,22 +1,41 @@
 import React from "react";
 
 const ProjectCard = () => {
+	const Projects = [
+		{
+			img: "./src/images/giyu.png",
+			title: "Timics Portfolio",
+			description: "If a dog chews shoes whose shoes does he choose?",
+			badges: [
+				"VS Code",
+				"React.js",
+				"Vite",
+				"Tailwind CSS",
+				"Daisy UI",
+				"Vercel",
+			],
+		},
+		{ title: "yes" },
+		{ title: "no" },
+	];
+
+	const badge = Projects[0].badges;
+
+	console.log(badge);
+
 	return (
 		<div className="card w-96 bg-neutral shadow-xl mt-8 mb-16 ml-4">
 			<figure>
-				<img src="./src/images/giyu.png" alt="Shoes" />
+				<img src={Projects[0]?.img} alt="Shoes" />
 			</figure>
 			<div className="card-body">
 				<div className="card-actions mb-2">
-					<div className="badge badge-primary text-secondary">VS Code</div>
-					<div className="badge badge-primary text-secondary">React.js</div>
-					<div className="badge badge-primary text-secondary">Vite</div>
-					<div className="badge badge-primary text-secondary">Tailwind CSS</div>
-					<div className="badge badge-primary text-secondary">Daisy UI</div>
-					<div className="badge badge-primary text-secondary">Vercel</div>
+					{Projects[0].badges.map((badge) => (
+						<div className="badge badge-primary text-secondary">{badge}</div>
+					))}
 				</div>
-				<h2 className="card-title">Timic's Portfolio</h2>
-				<p>If a dog chews shoes whose shoes does he choose?</p>
+				<h2 className="card-title">{Projects[0]?.title}</h2>
+				<p>{Projects[0]?.description}</p>
 				<div className="card-actions justify-end">
 					<button className="btn btn-primary">
 						<a href="">Go to Project</a>

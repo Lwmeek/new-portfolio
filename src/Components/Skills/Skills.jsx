@@ -15,7 +15,7 @@ const Skills = () => {
 						HTML/CSS/JavaScript
 					</p>
 					<p className="badge badge-primary text-secondary">React.js</p>
-					<p className="badge badge-primary text-secondary">SASS</p>
+					<p className="badge badge-primary text-secondary">SASS/SCSS</p>
 					<p className="badge badge-primary text-secondary">Tailwind CSS</p>
 					<p className="badge badge-primary text-secondary">Vite</p>
 					<p className="badge badge-primary text-secondary">Webpack</p>

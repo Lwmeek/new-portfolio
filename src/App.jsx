@@ -6,16 +6,18 @@ import Introduction from "./Components/Introduction/Introduction";
 import ProjectCard from "./Components/Projects/ProjectCard";
 import Projects from "./Components/Projects/Projects";
 import Skills from "./Components/Skills/Skills";
+import React, { useState } from "react";
 
 function App() {
-
+	
+	
 	return (
 		<>
 			<Header />
 			<Introduction />
 			<Skills />
-			<Projects />
-			<ProjectCard/>
+			<Projects/>
+			<ProjectCard />
 			<Certificates />
 			<Contact />
 			<Footer />
