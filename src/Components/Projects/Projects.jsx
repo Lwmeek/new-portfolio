@@ -4,6 +4,8 @@ import ProjectCard from "./ProjectCard";
 const Projects = (props) => {
 	const [active, setActive] = useState(1);
 
+	const projectNumbers = ["Porject 1", "Project 2", "Project 3"];
+
 	const handleActiveTab = (index) => {
 		setActive(index);
 	};
@@ -15,25 +17,12 @@ const Projects = (props) => {
 				Recent Projects
 			</h2>
 			<div className="tabs">
-				<a
-					className={`tab tab-bordered ${active === 1 ? "tab-active" : ""}`}
-					onClick={() => handleActiveTab(1)}
-				>
-					Project 1
-				</a>
-
-				<a
-					className={`tab tab-bordered ${active === 2 ? "tab-active" : ""}`}
-					onClick={() => handleActiveTab(2)}
-				>
-					Project 2
-				</a>
-				<a
-					className={`tab tab-bordered ${active === 3 ? "tab-active" : ""}`}
-					onClick={() => handleActiveTab(3)}
-				>
-					Project 3
-				</a>
+				{projectNumbers.map((project, index) => (
+					<a
+					className={`tab tab-bordered ${active === index ? "tab-active" : ""}`}
+					onClick={() => handleActiveTab(index)}
+				>{project}</a>
+				))}
 			</div>
 		</section>
 	);
