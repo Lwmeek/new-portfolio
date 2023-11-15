@@ -3,10 +3,9 @@ import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Introduction from "./Components/Introduction/Introduction";
-import ProjectCard from "./Components/Projects/ProjectCard";
 import Projects from "./Components/Projects/Projects";
 import Skills from "./Components/Skills/Skills";
-import React, { useState } from "react";
+import React from "react";
 
 function App() {
 	
@@ -17,7 +16,6 @@ function App() {
 			<Introduction />
 			<Skills />
 			<Projects/>
-			<ProjectCard />
 			<Certificates />
 			<Contact />
 			<Footer />

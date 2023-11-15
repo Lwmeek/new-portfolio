@@ -1,77 +1,25 @@
 import React from "react";
+import { ProjectsArr } from "../../assets/Useful Data/ProjectArr";
 
-const ProjectCard = (props) => {
-	//Projects array for Recent Projects made.
-	const Projects = [
-		{
-			img: "./src/images/giyu.png",
-			title: "Timics Portfolio",
-			description: "If a dog chews shoes whose shoes does he choose?",
-			link: "hi",
-			badges: [
-				"VS Code",
-				"React.js",
-				"Vite",
-				"Tailwind CSS",
-				"Daisy UI",
-				"Vercel",
-			],
-		},
-		{
-			img: "./src/images/giyu.png",
-			title: "Yes",
-			description: "If a dog chews shoes whose shoes does he choose?",
-			link: "hi",
-			badges: [
-				"VS Code",
-				"React.js",
-				"Vite",
-				"Tailwind CSS",
-				"Daisy UI",
-				"Vercel",
-			],
-		},
-		{
-			img: "./src/images/giyu.png",
-			title: "No",
-			description: "If a dog chews shoes whose shoes does he choose?",
-			link: "hi",
-			badges: [
-				"VS Code",
-				"React.js",
-				"Vite",
-				"Tailwind CSS",
-				"Daisy UI",
-				"Vercel",
-			],
-		},
-	];
-
-	const badge = Projects[0].badges;
-
-	console.log(badge);
-
+const ProjectCard = ({ className, id}) => {
 	return (
-		<div
-			index={props.index}
-			className="card w-96 bg-neutral shadow-xl mt-8 mb-16 ml-4"
-		>
+		<div className={className}>
 			<figure>
-				<img src={Projects[0]?.img} alt="Shoes" />
+				<img src={ProjectsArr[id]?.img} alt="project thumbnail" />
 			</figure>
 			<div className="card-body">
 				<div className="card-actions mb-2">
-					{Projects[0].badges.map((badge) => (
+					{ProjectsArr[id].badges.map((badge) => (
 						<div key={badge} className="badge badge-primary text-secondary">
 							{badge}
 						</div>
 					))}
 				</div>
-				<h2 className="card-title">{Projects[0]?.title}</h2>
-				<p>{Projects[0]?.description}</p>
+				<h2 className="card-title">{ProjectsArr[id]?.title}</h2>
+				<p>{ProjectsArr[id]?.description}</p>
 				<div className="card-actions justify-end">
 					<button className="btn btn-primary">
-						<a href="">Go to Project</a>
+						<a href={ProjectsArr[id]?.link}>Go to Project</a>
 					</button>
 				</div>
 			</div>
