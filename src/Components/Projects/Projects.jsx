@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
 
-const Projects = (props) => {
+const Projects = () => {
 	const [active, setActive] = useState(1);
 
-	const projectNumbers = ["Porject 1", "Project 2", "Project 3"];
+	const projectNumbers = ["Project 1", "Project 2", "Project 3"];
 
 	const handleActiveTab = (index) => {
 		setActive(index);
@@ -19,9 +19,14 @@ const Projects = (props) => {
 			<div className="tabs">
 				{projectNumbers.map((project, index) => (
 					<a
-					className={`tab tab-bordered ${active === index ? "tab-active" : ""}`}
-					onClick={() => handleActiveTab(index)}
-				>{project}</a>
+						key={index}
+						className={`tab tab-bordered ${
+							active === index ? "tab-active" : ""
+						}`}
+						onClick={() => handleActiveTab(index)}
+					>
+						{project}
+					</a>
 				))}
 			</div>
 		</section>
