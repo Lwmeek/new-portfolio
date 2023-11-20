@@ -6,7 +6,6 @@ const Quotes = ({ maxChar = 100 }) => {
 
 	useEffect(() => {
 		fetch(`https://api.api-ninjas.com/v1/quotes?category=inspirational`, {
-			method: "GET",
 			headers: {
 				"X-Api-Key": "LoFStGE9rzs7poLsoUPqFg==2lzCbz7sK0MTooJx",
 				"Content-Type": "application/json",
@@ -20,9 +19,12 @@ const Quotes = ({ maxChar = 100 }) => {
 
 	if (data[0]?.quote.length <= maxChar) {
 		return (
-			<p className="text-center w-3/4 m-auto bg-neutral p-3 rounded-md">
-				{data[0]?.quote}
-			</p>
+			<div className="text-center w-3/4 m-auto bg-neutral p-3 rounded-md">
+				<h2 className="underline underline-offset-4 mb-2">
+					Inspirational Quote
+				</h2>
+				<p>"{data[0]?.quote}"</p>
+			</div>
 		);
 	} else if (data[0]?.quote.length === undefined) {
 		return "";
@@ -36,6 +38,7 @@ const Quotes = ({ maxChar = 100 }) => {
 
 	return (
 		<div className="text-center w-3/4 m-auto bg-neutral p-3 rounded-md">
+			<h2 className="underline underline-offset-4 mb-2">Inspirational Quote</h2>
 			<p>"{quote}"</p>
 			<button
 				className="btn btn-ghost ml-4"
