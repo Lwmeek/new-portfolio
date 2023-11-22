@@ -10,7 +10,7 @@ const Introduction = () => {
 				/>
 				<section className="intro p-4">
 					<h1 className="text-4xl mb-8">
-						What makes You <span>Different?</span>
+						What makes You <span>Different ?</span>
 					</h1>
 					<p>
 						You might see a lot of candidates saying they are passionate about

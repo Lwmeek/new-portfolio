@@ -18,11 +18,11 @@ const ColorMode = () => {
 	return (
 		<label className="swap swap-rotate">
 			{/* this hidden checkbox controls the state */}
-			<input value="type" type="checkbox" className="colorMode" onClick={toggleColorMode} />
+			<input value="type" type="checkbox" onClick={toggleColorMode} />
 
 			{/* sun icon */}
 			<svg
-				className="swap-on fill-current w-7 h-7"
+				className="swap-on fill-current w-7 h-7 text-accent"
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 24 24"
 			>

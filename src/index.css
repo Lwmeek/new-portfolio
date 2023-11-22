@@ -44,11 +44,10 @@ body {
 	border-radius: 0.5rem;
 	transition: all 0.4s;
 }
-
-/* Special Text color */
-span {
+ /* Special text color */
+ span {
 	color: var(--secondary);
-}
+ }
 
 /* Project Card */
 .card-body {

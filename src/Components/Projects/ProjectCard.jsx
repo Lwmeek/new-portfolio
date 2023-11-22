@@ -15,8 +15,8 @@ const ProjectCard = ({ className, id}) => {
 						</div>
 					))}
 				</div>
-				<h2 className="card-title">{ProjectsArr[id]?.title}</h2>
-				<p>{ProjectsArr[id]?.description}</p>
+				<h2 className="card-title text-accent">{ProjectsArr[id]?.title}</h2>
+				<p className="text-accent">{ProjectsArr[id]?.description}</p>
 				<div className="card-actions justify-end">
 					<button className="btn btn-primary">
 						<a href={ProjectsArr[id]?.link}>Go to Project</a>

@@ -10,17 +10,32 @@ const Contact = () => {
 				</h2>
 				<form className="flex flex-col gap-2">
 					<label htmlFor="fullName">Full Name:</label>
-					<input className="w-3/5" type="text" name="fullName" id="fullName" />
+					<input
+						className="w-3/5 border border-neutral"
+						type="text"
+						name="fullName"
+						id="fullName"
+					/>
 
 					<label htmlFor="email">Email:</label>
-					<input className="w-3/5" type="email" name="email" id="email" />
+					<input
+						className="w-3/5 border border-neutral"
+						type="email"
+						name="email"
+						id="email"
+					/>
 
 					<label htmlFor="subject">Subject:</label>
-					<input className="w-3/5" type="text" name="subject" id="subject" />
+					<input
+						className="w-3/5 border border-neutral"
+						type="text"
+						name="subject"
+						id="subject"
+					/>
 
 					<label htmlFor="message">Message:</label>
 					<textarea
-						className="w-4/5"
+						className="w-4/5 border border-neutral"
 						name="message"
 						id="message"
 						cols="30"

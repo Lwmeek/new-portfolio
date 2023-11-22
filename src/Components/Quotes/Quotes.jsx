@@ -20,10 +20,10 @@ const Quotes = ({ maxChar = 100 }) => {
 	if (data[0]?.quote.length <= maxChar) {
 		return (
 			<div className="text-center w-3/4 m-auto bg-neutral p-3 rounded-md">
-				<h2 className="underline underline-offset-4 mb-2">
+				<h2 className="underline underline-offset-4 mb-2 text-accent">
 					Inspirational Quote
 				</h2>
-				<p>"{data[0]?.quote}"</p>
+				<p className="text-accent">"{data[0]?.quote}"</p>
 			</div>
 		);
 	} else if (data[0]?.quote.length === undefined) {
@@ -36,10 +36,10 @@ const Quotes = ({ maxChar = 100 }) => {
 
 	return (
 		<div className="text-center w-3/4 m-auto bg-neutral p-3 rounded-md">
-			<h2 className="underline underline-offset-4 mb-2">Inspirational Quote</h2>
-			<p>"{quote}"</p>
+			<h2 className="underline underline-offset-4 mb-2 text-accent">Inspirational Quote</h2>
+			<p className="text-accent">"{quote}"</p>
 			<button
-				className="btn btn-ghost ml-4"
+				className="btn btn-ghost ml-4 text-accent"
 				onClick={() => setExpanded(!expanded)}
 			>
 				{expanded ? "Less" : "More"}
