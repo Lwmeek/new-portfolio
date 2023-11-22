@@ -6,17 +6,23 @@ export default {
 	},
 	daisyui: {
 		themes: [
-			"light",
-			"dark",
 			{
 				/* Jaguars colors */
-				mytheme: {
+				mythemeDark: {
 					primary: "#006778" /* Teal */,
 					secondary: "#D7A22A" /* Gold */,
 					"base-100": "#000000" /* Black */,
 					neutral: "#101820" /* Off Black */,
 					accent: "#9F792C" /* Dark Gold */,
 					"base-content": "#ffffff" /* White */,
+				},
+				mythemeLight: {
+					primary: "#006778" /* Teal */,
+					secondary: "#D7A22A" /* Gold */,
+					"base-100": "#ffffff" /* White */,
+					neutral: "#101820" /* Off Black */,
+					accent: "#9F792C" /* Dark Gold */,
+					"base-content": "#000000" /* Black */,
 				},
 			},
 		],

@@ -34,8 +34,6 @@ const Quotes = ({ maxChar = 100 }) => {
 		? data[0]?.quote
 		: data[0]?.quote.substring(0, maxChar) + "...";
 
-	console.log(data[0]?.quote.length);
-
 	return (
 		<div className="text-center w-3/4 m-auto bg-neutral p-3 rounded-md">
 			<h2 className="underline underline-offset-4 mb-2">Inspirational Quote</h2>
