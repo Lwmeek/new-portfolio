@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
 	const [active, setActive] = useState(0);
 
-	const projectTabs = ["Project 1", "Project 2", "Project 3"];
+	const projectTabs = ["Game Hub", "Social Media", "Chat App"];
 
 	const handleActiveTab = (index) => {
 		setActive(index);
