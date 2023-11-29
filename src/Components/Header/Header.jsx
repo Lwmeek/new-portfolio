@@ -1,16 +1,18 @@
 import React from "react";
 import NavBar from "./Navbar";
+import Quotes from "../Quotes/Quotes";
 
 const Header = () => {
 	return (
 		<>
-			<header>
+			<header className="header">
 				<NavBar />
 				<img
 					className="banner"
 					src="./src/images/jags banner.jpg"
 					alt="jaguars banner"
 				/>
+				<Quotes />
 			</header>
 		</>
 	);
