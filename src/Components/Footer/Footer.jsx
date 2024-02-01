@@ -7,7 +7,7 @@ const Footer = () => {
 			<h1 className="text-secondary text-3xl text-center mb-6">
 				Timic's Portfolio
 			</h1>
-			<div className="grid grid-cols-3 gap-2 justify-items-center mb-6">
+			<div className="grid grid-cols-2 gap-3 justify-items-center mb-6">
 				<p className="badge badge-primary text-secondary">JavaScript/ JSX</p>
 				<p className="badge badge-primary text-secondary">React.js</p>
 				<p className="badge badge-primary text-secondary">

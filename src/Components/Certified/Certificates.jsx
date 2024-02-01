@@ -8,7 +8,7 @@ import {
 
 const Certificates = () => {
 	return (
-		<section className="certificates p-4">
+		<section className="certificates p-4 mb-16">
 			<h2 className="text-4xl mb-6 underline underline-offset-4">
 				Certifications
 			</h2>

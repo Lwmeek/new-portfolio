@@ -11,12 +11,12 @@ const Projects = () => {
 	};
 	const handleClass = (index) => {
 		return active === index
-			? "card w-96 bg-neutral shadow-xl mt-8 mb-16 m-auto block"
-			: "card w-96 bg-neutral shadow-xl mt-8 mb-16 m-auto hidden";
+			? "card w-full bg-neutral shadow-xl mt-8 mb-1 m-auto block"
+			: "card w-full bg-neutral shadow-xl mt-8 mb-1 m-auto hidden";
 	};
 
 	return (
-		<section className="p-5 mb-16">
+		<section className="p-2 mb-16">
 			<h2 className="text-4xl mb-8 underline underline-offset-4">
 				Recent Projects
 			</h2>

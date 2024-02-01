@@ -3,7 +3,7 @@ import React from "react";
 const Skills = () => {
 	return (
 		<>
-			<section className="skills-section p-5 mb-16">
+			<section className="skills-section pl-2 mb-16">
 				<h2 className="text-4xl mb-8 underline underline-offset-4">
 					Skills I Possess
 				</h2>
@@ -20,8 +20,9 @@ const Skills = () => {
 					<p className="badge badge-primary text-secondary">Vite</p>
 					<p className="badge badge-primary text-secondary">Webpack</p>
 					<p className="badge badge-primary text-secondary">
-						Chakra UI/Material UI/Daisy UI
+						Chakra UI/ Daisy UI
 					</p>
+					<p className="badge badge-primary text-secondary">Material UI</p>
 					<p className="badge badge-primary text-secondary">Git/GitHub</p>
 					<p className="badge badge-primary text-secondary">VS Code</p>
 					<p className="badge badge-primary text-secondary">Restful Apis</p>

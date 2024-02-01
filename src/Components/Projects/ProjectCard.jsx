@@ -1,7 +1,7 @@
 import React from "react";
 import { ProjectsArr } from "../../assets/Useful Data/ProjectArr";
 
-const ProjectCard = ({ className, id}) => {
+const ProjectCard = ({ className, id }) => {
 	return (
 		<div className={className}>
 			<figure>

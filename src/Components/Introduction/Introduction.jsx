@@ -2,11 +2,11 @@ import React from "react";
 
 const Introduction = () => {
 	return (
-		<section className="hero mb-8">
-			<div className="hero-content flex-col md:flex-row">
+		<section className="hero mb-8 overflow-hidden">
+			<div className="hero-content flex-col md:flex-row p-0">
 				<img
 					src="./src/images/zenitsu.png"
-					className="max-w-sm rounded-lg shadow-2xl"
+					className="rounded-lg shadow-2xl"
 				/>
 				<section className="intro p-4">
 					<h1 className="text-4xl mb-8">
@@ -38,10 +38,10 @@ const Introduction = () => {
 					<p className="py-6">
 						<span>Location:</span> Jacksonville, Florida, USA
 					</p>
-					<p className="py-6">
+					<p className="py-6 col-span-2">
 						<span>Email:</span> timicivey27@gmail.com
 					</p>
-					<p className="py-6">
+					<p className="py-6 col-span-2">
 						<span>Phone:</span> (386)-631-4549
 					</p>
 
