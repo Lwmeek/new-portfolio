@@ -2,13 +2,13 @@ import React from "react";
 
 const Introduction = () => {
 	return (
-		<section className="hero mb-8 overflow-hidden">
-			<div className="hero-content flex-col md:flex-row p-0">
+		<section className="hero mb-8 overflow-hidden md:max-h-min">
+			<div className="hero-content flex-col lg:flex-row p-0">
 				<img
 					src="./src/images/zenitsu.png"
 					className="rounded-lg shadow-2xl"
 				/>
-				<section className="intro p-4">
+				<section className="intro p-4 md:p-10">
 					<h1 className="text-4xl mb-8">
 						What makes You <span>Different ?</span>
 					</h1>
@@ -38,10 +38,10 @@ const Introduction = () => {
 					<p className="py-6">
 						<span>Location:</span> Jacksonville, Florida, USA
 					</p>
-					<p className="py-6 col-span-2">
+					<p className="py-6 col-span-2 md:col-span-1">
 						<span>Email:</span> timicivey27@gmail.com
 					</p>
-					<p className="py-6 col-span-2">
+					<p className="py-6 col-span-2 md:col-span-1">
 						<span>Phone:</span> (386)-631-4549
 					</p>
 

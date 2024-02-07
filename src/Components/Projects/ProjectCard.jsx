@@ -5,7 +5,11 @@ const ProjectCard = ({ className, id }) => {
 	return (
 		<div className={className}>
 			<figure>
-				<img src={ProjectsArr[id]?.img} alt="project thumbnail" />
+				<img
+					src={ProjectsArr[id]?.img}
+					alt="project thumbnail"
+					className="max-h-96"
+				/>
 			</figure>
 			<div className="card-body">
 				<div className="card-actions mb-2">
