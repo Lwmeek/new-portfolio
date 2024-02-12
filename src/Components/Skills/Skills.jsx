@@ -3,8 +3,8 @@ import React from "react";
 const Skills = () => {
 	return (
 		<>
-			<section className="skills-section pl-2 mb-16 md:pl-10">
-				<h2 className="text-4xl mb-8 underline underline-offset-4">
+			<section className="skills-section mb-16 md: max-w-lg m-auto">
+				<h2 className="text-4xl text-center mb-8 underline underline-offset-4">
 					Skills I Possess
 				</h2>
 				<div className="grid grid-cols-2 gap-2">

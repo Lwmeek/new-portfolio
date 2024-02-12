@@ -6,7 +6,7 @@ const Introduction = () => {
 			<div className="hero-content flex-col lg:flex-row p-0">
 				<img
 					src="./src/images/zenitsu.png"
-					className="rounded-lg shadow-2xl"
+					className="rounded-lg shadow-2xl lg:max-w-md"
 				/>
 				<section className="intro p-4 md:p-10">
 					<h1 className="text-4xl mb-8">

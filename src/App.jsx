@@ -15,9 +15,11 @@ function App() {
 		<>
 			<Header />
 			<Introduction />
-			<Skills />
+			<div className="flex flex-col lg:flex-row items-start">
+				<Skills />
+				<Certificates />
+			</div>
 			<Projects/>
-			<Certificates />
 			<Contact />
 			<Footer />
 		</>
