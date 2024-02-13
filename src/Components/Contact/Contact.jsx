@@ -4,7 +4,7 @@ import { BsRocketTakeoff } from "react-icons/bs";
 const Contact = () => {
 	return (
 		<>
-			<section className="contact p-4 md:pl-10">
+			<section className="contact p-4 md:pl-10 lg:max-w-5xl">
 				<h2 className="text-4xl mb-6 underline underline-offset-4">
 					Contact Me!
 				</h2>

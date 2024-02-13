@@ -2,11 +2,11 @@ import React from "react";
 
 const Introduction = () => {
 	return (
-		<section className="hero mb-8 overflow-hidden md:max-h-min">
-			<div className="hero-content flex-col lg:flex-row p-0">
+		<section className="hero mb-8 overflow-hidden md:max-h-min lg:mt-32 max-w-7xl m-auto">
+			<div className="hero-content flex-col lg:grid grid-cols-2 p-0">
 				<img
 					src="./src/images/zenitsu.png"
-					className="rounded-lg shadow-2xl lg:max-w-md"
+					className="rounded-lg shadow-2xl max-w-lg lg:max-w-md"
 				/>
 				<section className="intro p-4 md:p-10">
 					<h1 className="text-4xl mb-8">
@@ -31,7 +31,7 @@ const Introduction = () => {
 						development.
 					</p>
 				</section>
-				<div className="grid grid-cols-2 items-center justify-items-center">
+				<div className="grid grid-cols-2 items-center justify-items-center lg:col-span-2">
 					<p>
 						<span>Age:</span> 27
 					</p>
