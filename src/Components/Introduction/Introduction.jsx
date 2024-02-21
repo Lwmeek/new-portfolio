@@ -2,7 +2,7 @@ import React from "react";
 
 const Introduction = () => {
 	return (
-		<section className="hero mb-8 overflow-hidden md:max-h-min lg:mt-32 max-w-7xl m-auto">
+		<section className="hero mb-8 mt-32 overflow-hidden md:max-h-min lg:mt-32 max-w-7xl m-auto">
 			<div className="hero-content flex-col lg:grid grid-cols-2 p-0">
 				<img
 					src="./src/images/zenitsu.png"

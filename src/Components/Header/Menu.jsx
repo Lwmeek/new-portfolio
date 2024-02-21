@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 
 const Menu = (props) => {
 	/* Nav menu links */
@@ -7,13 +8,10 @@ const Menu = (props) => {
 		<div className={className}>
 			<ul className="flex flex-col gap-2 z-[1]">
 				<li className="menu-item">
-					<a>Home</a>
+					<HashLink to="#projects">Projects</HashLink>
 				</li>
 				<li className="menu-item">
-					<a>Projects</a>
-				</li>
-				<li className="menu-item">
-					<a>Contact Me</a>
+					<HashLink to="#contact">Contact Me</HashLink>
 				</li>
 			</ul>
 		</div>

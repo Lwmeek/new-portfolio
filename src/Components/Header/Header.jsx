@@ -5,7 +5,7 @@ import Quotes from "../Quotes/Quotes";
 const Header = () => {
 	return (
 		<>
-			<header className="header md:max-h-min">
+			<header className="header">
 				<NavBar />
 				<img
 					className="banner md:max-h-72 lg:max-h-80"
