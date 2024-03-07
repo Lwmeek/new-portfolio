@@ -19,10 +19,10 @@ const Footer = () => {
 			</div>
 			<div className="text-center mb-4">
 				<a className="btn btn-xs btn-link text-3xl font-bold mr-4">
-					<BsGithub className="icon text-secondary" />
+					<BsGithub className="icon text-secondary hover:opacity-70" />
 				</a>
 				<a className="btn btn-xs btn-link text-3xl font-bold">
-					<BsLinkedin className="icon text-secondary" />
+					<BsLinkedin className="icon text-secondary hover:opacity-70" />
 				</a>
 			</div>
 			<div className="text-center">
