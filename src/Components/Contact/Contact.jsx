@@ -29,46 +29,51 @@ const Contact = () => {
 				<h2 className="text-4xl underline underline-offset-4 mb-2">
 					Send Me Your Energy!
 				</h2>
-				<p className="mb-6">📩 Send a Email to Connect with me and I will reply as soon as possible.😁</p>
-				<form ref={form} onSubmit={sendEmail} className="flex flex-col gap-2">
-					<label htmlFor="fullName">Full Name:</label>
-					<input
-						className="w-3/5 border border-neutral text-neutral"
-						type="text"
-						name="fullName"
-						id="fullName"
-					/>
-
-					<label htmlFor="email">Email:</label>
-					<input
-						className="w-3/5 border border-neutral text-neutral"
-						type="email"
-						name="email"
-						id="email"
-					/>
-
-					<label htmlFor="subject">Subject:</label>
-					<input
-						className="w-3/5 border border-neutral text-neutral"
-						type="text"
-						name="subject"
-						id="subject"
-					/>
-
-					<label htmlFor="message">Message:</label>
-					<textarea
-						className="w-4/5 border border-neutral text-neutral"
-						name="message"
-						id="message"
-						cols="30"
-						rows="10"
-					></textarea>
-
-					<button className="btn btn-primary w-28" type="submit" value="Send">
-						Send
-						<BsRocketTakeoff />
-					</button>
-					<div className="goku-spiritBomb flex flex-col items-center">
+				<p className="mb-6">
+					📩 Send a Email to Connect with me and I will reply as soon as
+					possible.😁
+				</p>
+				<div className="lg:flex justify-between">
+					<form
+						ref={form}
+						onSubmit={sendEmail}
+						className="flex flex-col gap-2 mb-16 lg:basis-2/3"
+					>
+						<label htmlFor="fullName">Full Name:</label>
+						<input
+							className="w-3/5 border border-neutral text-neutral"
+							type="text"
+							name="fullName"
+							id="fullName"
+						/>
+						<label htmlFor="email">Email:</label>
+						<input
+							className="w-3/5 border border-neutral text-neutral"
+							type="email"
+							name="email"
+							id="email"
+						/>
+						<label htmlFor="subject">Subject:</label>
+						<input
+							className="w-3/5 border border-neutral text-neutral"
+							type="text"
+							name="subject"
+							id="subject"
+						/>
+						<label htmlFor="message">Message:</label>
+						<textarea
+							className="w-5/6 border border-neutral text-neutral lg:w-full"
+							name="message"
+							id="message"
+							cols="30"
+							rows="10"
+						></textarea>
+						<button className="btn btn-primary w-28" type="submit" value="Send">
+							Send
+							<BsRocketTakeoff />
+						</button>
+					</form>
+					<div className="goku-spiritBomb flex flex-col items-center mb-10">
 						<div className="rasengan">
 							<div className="line line1"></div>
 							<div className="line line2"></div>
@@ -179,7 +184,7 @@ const Contact = () => {
 							/>
 						</div>
 					</div>
-				</form>
+				</div>
 			</section>
 		</>
 	);

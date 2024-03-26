@@ -1,4 +1,5 @@
 import React from "react";
+import Quotes from "../Quotes/Quotes";
 
 const Introduction = () => {
 	return (
@@ -22,6 +23,7 @@ const Introduction = () => {
 						<span>Phone:</span> (386)-631-4549
 					</p>
 				</div>
+				<Quotes />
 				<section className="intro p-4 md:p-10">
 					<h1 className="text-4xl mb-8">
 						What makes You <span>Different ?</span>
