@@ -13,7 +13,7 @@ function App() {
 		<>
 		<BrowserRouter>
 			<Header />
-			<Introduction />
+			
 			<div className="flex flex-col lg:flex-row items-start">
 				<Skills />
 				<Certificates />

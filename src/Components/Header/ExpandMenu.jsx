@@ -12,7 +12,7 @@ const ExpandMenu = () => {
 
 	return (
 		<>
-			<button className="btn btn-ghost menu-btn text-accent" onClick={handleExpand}>
+			<button className="btn btn-ghost menu-btn text-content" onClick={handleExpand}>
 				{isExpanded ? (
 					<AiOutlineClose fontSize={25} />
 				) : (

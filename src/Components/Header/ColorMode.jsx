@@ -22,7 +22,7 @@ const ColorMode = () => {
 
 			{/* sun icon */}
 			<svg
-				className="swap-on fill-current w-7 h-7 text-accent"
+				className="swap-on fill-current w-7 h-7 text-content"
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 24 24"
 			>

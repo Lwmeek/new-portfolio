@@ -2,12 +2,26 @@ import React from "react";
 
 const Introduction = () => {
 	return (
-		<section className="hero mb-8 mt-32 overflow-hidden md:max-h-min lg:mt-32 max-w-7xl m-auto">
+		<section className="hero mb-24 overflow-hidden md:max-h-min max-w-7xl m-auto">
 			<div className="hero-content flex-col lg:grid grid-cols-2 p-0">
 				<img
 					src="./src/images/zenitsu.png"
-					className="rounded-lg shadow-2xl max-w-lg lg:max-w-md"
+					className="rounded-lg shadow-2xl max-w-sm lg:max-w-md"
 				/>
+				<div className="grid grid-cols-2 items-center justify-items-center lg:col-span-2">
+					<p>
+						<span>Age:</span> 27
+					</p>
+					<p className="py-6">
+						<span>Location:</span> Jacksonville, Florida, USA
+					</p>
+					<p className="py-6 col-span-2 md:col-span-1">
+						<span>Email:</span> timicivey27@gmail.com
+					</p>
+					<p className="py-6 col-span-2 md:col-span-1">
+						<span>Phone:</span> (386)-631-4549
+					</p>
+				</div>
 				<section className="intro p-4 md:p-10">
 					<h1 className="text-4xl mb-8">
 						What makes You <span>Different ?</span>
@@ -31,26 +45,12 @@ const Introduction = () => {
 						development.
 					</p>
 				</section>
-				<div className="grid grid-cols-2 items-center justify-items-center lg:col-span-2">
-					<p>
-						<span>Age:</span> 27
-					</p>
-					<p className="py-6">
-						<span>Location:</span> Jacksonville, Florida, USA
-					</p>
-					<p className="py-6 col-span-2 md:col-span-1">
-						<span>Email:</span> timicivey27@gmail.com
-					</p>
-					<p className="py-6 col-span-2 md:col-span-1">
-						<span>Phone:</span> (386)-631-4549
-					</p>
 
-					<button className="btn btn-primary col-span-2 w-56 justify-self-center">
-						<a href="https://drive.google.com/file/d/1rlGYG_5dgM9XSwJKd29ysvfcKdgKPOc5/view?usp=drive_link">
-							See & Download Resume
-						</a>
-					</button>
-				</div>
+				<button className="btn btn-primary col-span-2 w-56 justify-self-center">
+					<a href="https://drive.google.com/file/d/1rlGYG_5dgM9XSwJKd29ysvfcKdgKPOc5/view?usp=drive_link">
+						See & Download Resume
+					</a>
+				</button>
 			</div>
 		</section>
 	);

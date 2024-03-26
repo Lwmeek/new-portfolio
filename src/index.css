@@ -15,25 +15,7 @@ body {
 }
 
 /* Header */
-.header {
-	background: linear-gradient(
-		to bottom,
-		#000000 67%,
-		rgba(0, 0, 0, 0.8),
-		rgba(0, 0, 0, 0.6),
-		rgba(0, 0, 0, 0.4),
-		rgba(0, 0, 0, 0.2),
-		rgba(0, 0, 0, 0.1),
-		rgba(0, 0, 0, 0)
-	);
-	height: 350px;
-}
-.banner {
-	width: 100%;
-}
-.navbar {
-	position: absolute;
-}
+
 .icon-group {
 	display: flex;
 	flex-direction: column;
