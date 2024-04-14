@@ -19,11 +19,11 @@ const Quotes = ({ maxChar = 100 }) => {
 
 	if (data[0]?.quote.length <= maxChar) {
 		return (
-			<div className="text-center w-3/4 m-auto bg-neutral p-3 rounded-md">
-				<h2 className="underline underline-offset-4 mb-2 text-accent">
+			<div className="text-center w-3/4 m-auto p-3 rounded-md">
+				<h2 className="underline underline-offset-4 mb-2 text-base-content">
 					Inspirational Quote
 				</h2>
-				<p className="text-accent">"{data[0]?.quote}"</p>
+				<p className="text-base-content">"{data[0]?.quote}"</p>
 			</div>
 		);
 	} else if (data[0]?.quote.length === undefined) {
@@ -35,11 +35,11 @@ const Quotes = ({ maxChar = 100 }) => {
 		: data[0]?.quote.substring(0, maxChar) + "...";
 
 	return (
-		<div className="text-center w-3/4 m-auto bg-neutral p-3 rounded-md">
-			<h2 className="underline underline-offset-4 mb-2 text-accent">Inspirational Quote</h2>
-			<p className="text-accent">"{quote}"</p>
+		<div className="text-center w-3/4 m-auto p-3 rounded-md">
+			<h2 className="underline underline-offset-4 mb-2 text-base-content">Inspirational Quote</h2>
+			<p className="text-base-content">"{quote}"</p>
 			<button
-				className="btn btn-ghost ml-4 text-accent"
+				className="btn btn-ghost ml-4 mt-6 text-base-content"
 				onClick={() => setExpanded(!expanded)}
 			>
 				{expanded ? "Less" : "More"}
