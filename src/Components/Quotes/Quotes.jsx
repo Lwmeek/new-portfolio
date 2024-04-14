@@ -19,7 +19,7 @@ const Quotes = ({ maxChar = 100 }) => {
 
 	if (data[0]?.quote.length <= maxChar) {
 		return (
-			<div className="text-center w-3/4 m-auto p-3 rounded-md">
+			<div className="text-center w-3/4 m-auto p-3 rounded-md lg:order-2">
 				<h2 className="underline underline-offset-4 mb-2 text-base-content">
 					Inspirational Quote
 				</h2>
@@ -35,11 +35,11 @@ const Quotes = ({ maxChar = 100 }) => {
 		: data[0]?.quote.substring(0, maxChar) + "...";
 
 	return (
-		<div className="text-center w-3/4 m-auto p-3 rounded-md">
+		<div className="text-center w-3/4 m-auto p-3 rounded-md lg:order-2">
 			<h2 className="underline underline-offset-4 mb-2 text-base-content">Inspirational Quote</h2>
 			<p className="text-base-content">"{quote}"</p>
 			<button
-				className="btn btn-ghost ml-4 mt-6 text-base-content"
+				className="btn btn-primary ml-4 mt-6 text-accent"
 				onClick={() => setExpanded(!expanded)}
 			>
 				{expanded ? "Less" : "More"}

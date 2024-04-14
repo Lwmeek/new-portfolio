@@ -7,9 +7,9 @@ const Introduction = () => {
 			<div className="hero-content flex-col lg:grid grid-cols-2 p-0">
 				<img
 					src="./src/images/zenitsu.png"
-					className="rounded-lg shadow-2xl max-w-sm lg:max-w-md"
+					className="rounded-lg shadow-2xl max-w-sm lg:max-w-md lg:order-2"
 				/>
-				<div className="grid grid-cols-2 items-center justify-items-center lg:col-span-2">
+				<div className="grid grid-cols-2 items-center justify-items-center lg:col-span-2 lg:order-3">
 					<p>
 						<span>Age:</span> 27
 					</p>
@@ -24,7 +24,7 @@ const Introduction = () => {
 					</p>
 				</div>
 				<Quotes />
-				<section className="intro p-4 md:p-10">
+				<section className="intro p-4 md:p-10 lg:order-4 lg:col-span-2">
 					<h1 className="text-4xl mb-8">
 						What makes You <span>Different ?</span>
 					</h1>
@@ -48,7 +48,7 @@ const Introduction = () => {
 					</p>
 				</section>
 
-				<button className="btn btn-primary col-span-2 w-56 justify-self-center">
+				<button className="btn btn-primary col-span-2 w-56 justify-self-center lg:order-5">
 					<a href="https://drive.google.com/file/d/1rlGYG_5dgM9XSwJKd29ysvfcKdgKPOc5/view?usp=drive_link">
 						See & Download Resume
 					</a>
